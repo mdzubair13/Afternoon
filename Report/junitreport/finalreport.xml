@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="54.142073">
+<testcase classname="To check bf funcion" name="to check create new account function" time="20.097229">
+<system-out><![CDATA[Given To open Chrome browser................................................passed
+When to Click createnew btn.................................................passed
+Then to click sign in button................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To Check login Fuctions" name="To pass valid username and valid Password" time="10.752886">
+<failure message="java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)&#13;&#10;&#9;at com.sun.proxy.$Proxy22.sendKeys(Unknown Source)&#13;&#10;&#9;at org.baseclass.HelperClass.fillTheTextBox(HelperClass.java:45)&#13;&#10;&#9;at org.steps.StepDefinition.toPassValidUsernameAndPassword(StepDefinition.java:83)&#13;&#10;&#9;at ✽.To pass  valid username and  password(file:src/test/resources/FeatureFiles/Login.feature:8)&#13;&#10;"><![CDATA[Given To Open Chrome Browser................................................passed
+When To pass  valid username and  password..................................failed
+Then To Click login button..................................................skipped
+
+StackTrace:
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy22.sendKeys(Unknown Source)
+	at org.baseclass.HelperClass.fillTheTextBox(HelperClass.java:45)
+	at org.steps.StepDefinition.toPassValidUsernameAndPassword(StepDefinition.java:83)
+	at ✽.To pass  valid username and  password(file:src/test/resources/FeatureFiles/Login.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="To Check login Fuctions" name="To pass invalid username and invalid password" time="23.291958">
+<system-out><![CDATA[Given To Open Chrome Browser................................................passed
+When To pass invalid username and valid password............................passed
+Then To Click login button..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
