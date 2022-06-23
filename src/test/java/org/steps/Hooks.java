@@ -54,6 +54,8 @@ public class Hooks extends HelperClass {
 	@After(order=1)
 	public void afterMethod3() {
 		System.out.println("After Method-3");
+		
+		System.out.println("1st Try");
 	}
 	
 }
