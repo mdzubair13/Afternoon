@@ -56,6 +56,7 @@ public class Hooks extends HelperClass {
 		System.out.println("After Method-3");
 		
 		System.out.println("1st Try");
+		System.out.println("2nd try");
 	}
 	
 }
